@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.side {
+    position: relative;
+    width: 120px; /* Largeur totale du logo */
+    height: 40px; /* Hauteur totale du logo */
+}
+
+.dots {
+    position: absolute;
+    width: 40px; /* Largeur d'un groupe de cercles */
+    height: 4px; /* Hauteur d'un groupe de cercles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots span {
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: rotate(calc((360deg / 12) * var(--i))) translateX(30px);
+    animation: load 1.3s infinite;
+    animation-delay: calc(0.3s * var(--i));
+    opacity: 0;
+}
+
+.dots:nth-child(1) {
+    left: -20px; /* Premier groupe à gauche */
+}
+
+.dots:nth-child(2) {
+    left: 20px; /* Deuxième groupe au milieu */
+}
+
+.dots:nth-child(3) {
+  left: 60px; /* Troisième groupe à droite */
+} 
+.dots:nth-child(4) {
+left: 100px; /* Troisième groupe à droite */
+}
+
+@keyframes load {
+    0% {
+        opacity: 1;
+    }
+    50% {
+      opacity: 0.9;
+  }
+    100% {
+        opacity: 0;
+    }
+}
+h2{
+  color: white;
+  font-size: 30px;
+  font-family: 'roboto';
+  opacity: 0.87;
+  position: relative;
+  top: 15px;
+}
